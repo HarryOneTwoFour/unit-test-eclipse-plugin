@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Unit-test-template
+Bundle-SymbolicName: unit-test-template;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: unit_test_template.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.jdt.core;bundle-version="3.10.2",
+ org.eclipse.ui.ide;bundle-version="3.10.2",
+ org.eclipse.text;bundle-version="3.5.300"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

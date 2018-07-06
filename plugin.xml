@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.jdt.core.IJavaElement"
+            id="unit-test-template.contribution1"
+            nameFilter="*Impl.java">
+         <menu
+               label="Unit Test Template"
+               path="additions"
+               id="unit-test-template.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Create"
+               class="unittesttemplate.popup.actions.CreateAction"
+               menubarPath="unit-test-template.menu1/group1"
+               enablesFor="1"
+               id="unit-test-template.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
